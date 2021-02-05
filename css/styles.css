@@ -31,7 +31,7 @@ img {
 }
 .link {
   display: block;
-  padding: 32px 0 32px 0;
+  padding: 32px 0;
 }
 .nav-item:first-child {
   margin-right: 94px;
@@ -75,6 +75,7 @@ ul {
   letter-spacing: 0.03em;
   font-size: 26px;
   line-height: 1.19;
+  padding: 24px 0 25px 0;
 }
 .logo {
   color: var(--color-hover_focus);
@@ -93,7 +94,7 @@ ul {
 }
 .contacts-link {
   display: flex;
-  padding: 32px 0 32px 15px;
+  padding: 32px 0;
 }
 .first-header-svg,
 .second-header-svg {
@@ -132,7 +133,7 @@ a {
 }
 .hero {
   max-width: 1600px;
-  padding: 200px 0 210px 0;
+  padding: 200px 0;
   text-align: center;
   background-image: linear-gradient(
       to right,
@@ -164,8 +165,12 @@ a {
 .hero .button.button-bc:focus {
   cursor: pointer;
 }
-.features {
+.features,
+.our-clients,
+.portfolio-main {
   padding: 94px 0;
+}
+.features-list {
   display: flex;
   justify-content: space-between;
   text-align: left;
@@ -174,10 +179,10 @@ a {
   text-align: left;
   max-width: 270px;
 }
-.features .features-item {
+.features-list .features-item {
   margin-right: 30px;
 }
-.features .features-item::before {
+.features-list .features-item::before {
   width: 100%;
   height: 120px;
   background: var(--grey-ld-background);
@@ -185,35 +190,35 @@ a {
   display: inline-block;
   margin-bottom: 30px;
 }
-.features .features-first::before {
+.features-list .features-first::before {
   background-image: url("../images/background/attantion-to-details.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
-.features .features-second::before {
+.features-list .features-second::before {
   background-image: url("../images/background/time.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
-.features .features-third::before {
+.features-list .features-third::before {
   background-image: url("../images/background/planning.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
-.features .features-forth::before {
+.features-list .features-forth::before {
   background-image: url("../images/background/newtime-techs.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
-.features .features-item:last-child {
+.features-list .features-item:last-child {
   margin-right: 0;
 }
-.features .features-item h3 {
+.features-list .features-item h3 {
   font-size: 14px;
   line-height: 1.14;
   margin: 0 0 10px 0;
 }
-.features p {
+.features-list p {
   font-size: 14px;
   line-height: 1.71;
   margin: 0;
@@ -244,7 +249,7 @@ a {
 .team {
   background: var(--grey-ld-background);
   display: flex;
-  padding: 94px 0 94px 0;
+  padding: 94px 0;
 }
 .team-title {
   margin: 0;
@@ -260,7 +265,7 @@ a {
   font-size: 16px;
   line-height: 1.19;
 }
-.features p,
+.features-list p,
 .team p {
   color: var(--other-text-color);
 }
@@ -276,11 +281,15 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team-div {
+  display: block;
+  width: 100%;
+  padding: 30px 0 16px 0;
+}
 .team-title-member {
-  margin: 30px 0 10px 0;
+  margin: 0 0 10px 0;
 }
 .team-member-chair {
-  padding: 0 0 16px 0;
   margin: 0;
 }
 .member-social-list {
@@ -325,9 +334,6 @@ a {
   font-weight: 700;
 }
 /* клиенты */
-.our-clients {
-  padding-top: 94px;
-}
 .our-clients-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -338,7 +344,6 @@ a {
 }
 .clients-list {
   display: flex;
-  margin-bottom: 94px;
 }
 .clients-list-item {
   margin-right: 30px;
@@ -378,6 +383,9 @@ a {
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.02em;
 }
+.footer-leftside {
+  padding-right: 75px;
+}
 .footer-leftside .footer-link {
   color: var(--very-light-color);
   font-family: var(--font-title);
@@ -401,9 +409,7 @@ a {
 .footer-list .city-address {
   color: var(--very-light-color);
 }
-.footer-center {
-  padding-left: 85px;
-}
+
 .footer-text {
   text-transform: uppercase;
   color: var(--very-light-color);
@@ -443,12 +449,9 @@ a {
   background-color: var(--color-hover_focus);
 }
 /* подключаем портфолио */
-.portfolio-main .container {
-  padding-top: 94px;
-}
 .portfolio-filter {
   display: flex;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 .filter-button {
@@ -483,7 +486,6 @@ a {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 .portfolio-list-item {
   margin: 0 30px 30px 0;
@@ -507,20 +509,23 @@ a {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
+.portfolio-card-div {
+  display: block;
+  width: 100%;
+  padding: 20px 24px;
+}
 .portfolio-list h3 {
   font-weight: 700;
   color: var(--main-text-color);
   letter-spacing: 0.06em;
   font-size: 18px;
   line-height: 2;
-  margin: 20px 0 4px 24px;
+  margin: 0 0 4px 0;
 }
 .portfolio-list p {
   font-weight: 400;
   color: var(--other-text-color);
   font-size: 16px;
   line-height: 1.87;
-  margin: 0 0 0px 24px;
-  padding-bottom: 20px;
+  margin: 0;
 }

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -49,16 +53,18 @@
         </div>
     </header>
     <main>
+        <!-- first section -->
         <section class="hero">
             <div class="container">
                 <h1 class="font-900 letter-spacing-06 uppercase">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="font-700 letter-spacing-06 button button-bc">Заказать услугу</button>
             </div>
         </section>
-        <section>
+        <!-- second section -->
+        <section class="features">
             <div class="container">
                 <h2 hidden>Наши преимущества</h2>
-                <ul class="features">
+                <ul class="features-list">
                     <li class="features-item features-first">
                         <h3 class="font-700 uppercase">Внимание к деталям</h3>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -78,6 +84,7 @@
                 </ul>
             </div>
         </section>
+        <!-- third section -->
         <section class="what-we-do">
             <div class="container">
                 <h2 class="font-700 what-we-do-title">Чем мы занимаемся</h2>
@@ -94,14 +101,17 @@
                 </ul>
             </div>
         </section>
+        <!-- forth section -->
         <section class="team">
             <div class="container">
                 <h2 class="font-700 team-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list-item">
                         <img src="./images/our-team/igor-demianenko.jpg" alt="Игорь Демьяненко" width="270">
-                        <h3 class="font-500 team-title-member">Игорь Демьяненко</h3>
-                        <p lang="en" class="team-member-chair">Product Designer</p>
+                        <div class="team-div">
+                            <h3 class="font-500 team-title-member">Игорь Демьяненко</h3>
+                            <p lang="en" class="team-member-chair">Product Designer</p>
+                        </div>
                         <ul class="member-social-list">
                             <li class="member-list-item">
                                 <a href="#" class="member-social-link-link">
@@ -135,8 +145,10 @@
                     </li>
                     <li class="team-list-item">
                         <img src="./images/our-team/olga-repina.jpg" alt="Ольга Репина" width="270">
-                        <h3 class="font-500 team-title-member">Ольга Репина</h3>
-                        <p lang="en" class="team-member-chair">Frontend Developer</p>
+                        <div class="team-div">
+                            <h3 class="font-500 team-title-member">Ольга Репина</h3>
+                            <p lang="en" class="team-member-chair">Frontend Developer</p>
+                        </div>
                         <ul class="member-social-list">
                             <li class="member-list-item">
                                 <a href="#" class="member-social-link-link">
@@ -170,8 +182,10 @@
                     </li>
                     <li class="team-list-item">
                         <img src="./images/our-team/nikolay-tarasov.jpg" alt="Николай Тарасов" width="270">
-                        <h3 class="font-500 team-title-member">Николай Тарасов</h3>
-                        <p lang="en" class="team-member-chair">Marketing</p>
+                        <div class="team-div">
+                            <h3 class="font-500 team-title-member">Николай Тарасов</h3>
+                            <p lang="en" class="team-member-chair">Marketing</p>
+                        </div>
                         <ul class="member-social-list">
                             <li class="member-list-item">
                                 <a href="#" class="member-social-link-link">
@@ -205,8 +219,10 @@
                     </li>
                     <li class="team-list-item">
                         <img src="./images/our-team/mihail-ermakov.jpg" alt="Михаил Ермаков" width="270">
-                        <h3 class="font-500 team-title-member">Михаил Ермаков</h3>
-                        <p lang="en" class="team-member-chair">UI Designer</p>
+                        <div class="team-div">
+                            <h3 class="font-500 team-title-member">Михаил Ермаков</h3>
+                            <p lang="en" class="team-member-chair">UI Designer</p>
+                        </div>
                         <ul class="member-social-list">
                             <li class="member-list-item">
                                 <a href="#" class="member-social-link-link">
@@ -241,7 +257,7 @@
                 </ul>
             </div>
         </section>
-                <!-- клиенты -->
+        <!-- клиенты, fifth section -->
         <section class="our-clients">
             <div class="container">
                 <h2 lang="ru" class="font-700 our-clients-title">Постоянные клиенты</h2>
@@ -271,7 +287,7 @@
                         <a href="" class="clients-list-link">
                             <svg class="social-svg" width="80" height="42">
                                 <use href="./images/icons/symbol-defs-optimus.svg#icon-company-forth"></use>
-                             </svg>
+                            </svg>
                         </a>
                     </li>
                     <li class="clients-list-item">
@@ -299,7 +315,8 @@
                 <address class="address">
                     <ul class="footer-list">
                         <li class="footer-list-item">
-                            <a href="https://goo.gl/maps/Ar7S7timAM4m2ztU9" target="_blank" class="city-address">г. Киев, пр-т Леси Украинки, 26</a>
+                            <a href="https://goo.gl/maps/Ar7S7timAM4m2ztU9" target="_blank" class="city-address">г.
+                                Киев, пр-т Леси Украинки, 26</a>
                         </li>
                         <li class="footer-list-item">
                             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -346,4 +363,5 @@
         </div>
     </footer>
 </body>
+
 </html>
