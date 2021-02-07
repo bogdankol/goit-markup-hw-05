@@ -57,7 +57,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="font-900 letter-spacing-06 uppercase">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="font-700 letter-spacing-06 button button-bc">Заказать услугу</button>
+                <button type="button" class="font-700 letter-spacing-06 button button-bc" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!-- second section -->
@@ -91,12 +91,15 @@
                 <ul class="what-we-do-list">
                     <li class="wwd-list-item">
                         <img src="./images/what-we-do/what-we-do-1.jpg" alt="do programming" width="370">
+                        <p class="image-text font-700" lang="ru">десктопные приложения</p>
                     </li>
                     <li class="wwd-list-item">
                         <img src="./images/what-we-do/what-we-do-2.jpg" alt="do adaptive" width="370">
+                        <p class="image-text font-700" lang="ru">мобильные приложения</p>
                     </li>
                     <li class="wwd-list-item">
                         <img src="./images/what-we-do/what-we-do-3.jpg" alt="do design" width="370">
+                        <p class="image-text font-700" lang="ru">дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
@@ -362,6 +365,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-icon-close" data-modal-close>
+                <svg class="modal-icon-close-svg" width="18" height="18">
+                    <use href="./images/icons/symbol-defs-optimus.svg#icon-modal-close-icon"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
